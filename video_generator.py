@@ -22,7 +22,12 @@ import cv2
 
 from image_generator import generate_images, decode, IMG_SIZE
 
-OUT_DIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs"))
+OUT_DIR = os.path.normpath(
+    os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "outputs"
+    )
+)
 FRAME_SIZE = 256  # upscaled for visibility
 FPS = 12
 
