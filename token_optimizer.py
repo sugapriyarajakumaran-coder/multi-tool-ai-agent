@@ -218,7 +218,12 @@ def demo():
         f"({cache.hits / (cache.hits + cache.misses):.0%} hit rate)")
     log(f"Tokens saved by caching: ~{cache.hits * count_tokens(prompts[0])} tokens")
 
-    OUT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs"))
+    OUT = os.path.normpath(
+    os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "outputs"
+    )
+)
     os.makedirs(OUT, exist_ok=True)
     out_path = os.path.join(OUT, "token_report.txt")
     with open(out_path, "w") as f:
