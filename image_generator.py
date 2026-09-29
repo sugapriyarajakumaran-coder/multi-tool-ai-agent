@@ -26,9 +26,14 @@ from PIL import Image
 
 IMG_SIZE = 32
 LATENT_DIM = 8
-OUT_DIR = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "outputs", "images"))
 
-
+OUT_DIR = os.path.normpath(
+    os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "outputs",
+        "images"
+    )
+)
 # ---------------------------------------------------------------------
 # 1. Synthetic training data generator
 # ---------------------------------------------------------------------
