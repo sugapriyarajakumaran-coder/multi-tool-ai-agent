@@ -1,0 +1,10 @@
+numpy
+scikit-learn
+opencv-python
+Pillow
+streamlit
+# tiktoken           # optional: real OpenAI tokenizer (needs internet access
+                      # to download vocab files; project falls back to a
+                      # local regex tokenizer if unavailable)
+imageio
+imageio-ffmpeg
